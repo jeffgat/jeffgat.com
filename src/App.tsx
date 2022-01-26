@@ -1,6 +1,7 @@
-import { Box } from '@chakra-ui/react';
 import About from './components/About';
+import Footer from './components/Footer';
 import Intro from './components/Intro';
+import Projects from './components/Projects';
 import SocialsVert from './components/SocialsVert';
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
       <Intro />
       <SocialsVert />
       <About />
-      <Box as='section' h='400px'></Box>
+      <Projects />
+      <Footer />
     </>
   );
 }

@@ -8,6 +8,7 @@ import {
   Text
 } from '@chakra-ui/react';
 import React from 'react';
+import * as Scroll from 'react-scroll';
 import apollo from '../images/apollo.png';
 import figma from '../images/figma.png';
 import graphql from '../images/graphql.png';
@@ -47,19 +48,22 @@ const About = (props: Props) => {
     { img: figma, text: 'Figma' },
   ];
 
+  const ScrollElement = Scroll.Element;
   return (
     <>
       <Box as='section' bg='gray.100' py='8' position='relative'>
         <Container maxW='120ch'>
-          <Heading
-            variant='h2'
-            fontSize='40px'
-            fontWeight='700'
-            textTransform='uppercase'
-            textAlign='center'
-          >
-            Summary
-          </Heading>
+          <ScrollElement name='scroll'>
+            <Heading
+              variant='h2'
+              fontSize='40px'
+              fontWeight='700'
+              textTransform='uppercase'
+              textAlign='center'
+            >
+              Summary
+            </Heading>
+          </ScrollElement>
           <Flex align='center' justify='center' mt='8'>
             <Image src={headshot} maxW='450px' w='50%' rounded='md' />
             <Box maxW='50%' px='8' fontSize='17px'>
@@ -73,15 +77,15 @@ const About = (props: Props) => {
                 Through that, I picked up front-end development and continued to
                 develop my skills, leading me to become a full-stack developer.
               </Text>
-              <Text as='span' textAlign='center'>
-                Preferred Tech Stack:
+              <Text as='span' display='block' fontWeight='600'>
+                Preferred tech stack:
               </Text>
               <SimpleGrid
                 columns={5}
                 spacing={4}
                 align='center'
                 justify='center'
-                mt='4'
+                mt='6'
               >
                 {techStackData.map(t => {
                   return <IconBlock key={t.text} text={t.text} img={t.img} />;

@@ -5,8 +5,19 @@ import MotionBox from './MotionBox';
 type Props = {};
 
 const Intro = (props: Props) => {
+  // const scroller = Scroll.scroller;
+
+  // const handleClick = () => {
+  //   scroller.scrollTo('scroll', {
+  //     duration: 800,
+  //     delay: 100,
+  //     smooth: true,
+  //     offset: -45
+  //   });
+  // };
+
   return (
-    <Box as='section'>
+    <Box as='section' position='relative'>
       <Container maxW='120ch' h='100vh'>
         <VStack
           align='start'
@@ -62,6 +73,26 @@ const Intro = (props: Props) => {
           </Flex>
         </VStack>
       </Container>
+      {/* <MotionBox
+        transition={{ repeat: Infinity, duration: 2, delay: 3 }}
+        animate={{ y: [0, 16, 0] }}
+        position='absolute'
+        left='50%'
+        bottom='12'
+        transform='translateX(-50%)'
+      >
+        <IconButton
+          type='button'
+          variant='unstyled'
+          aria-label='Scroll Down'
+          icon={<ArrowDownIcon />}
+          fontSize='40px'
+          onClick={handleClick}
+          _focus={{
+            outline: 'none',
+          }}
+        />
+      </MotionBox> */}
     </Box>
   );
 };
