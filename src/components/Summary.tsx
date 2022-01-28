@@ -9,17 +9,6 @@ import {
 } from '@chakra-ui/react';
 import React from 'react';
 import * as Scroll from 'react-scroll';
-import apollo from '../images/apollo.png';
-import figma from '../images/figma.png';
-import graphql from '../images/graphql.png';
-import headshot from '../images/headshot.jpg';
-import javascript from '../images/javascript.png';
-import mongo from '../images/mongo.png';
-import node from '../images/node.png';
-import postgres from '../images/postgres.png';
-import react from '../images/react.png';
-import redis from '../images/redis.png';
-import typescript from '../images/typescript.png';
 
 type Props = {};
 
@@ -36,17 +25,29 @@ const IconBlock = ({ img, text }: any) => {
 
 const Summary = (props: Props) => {
   const techStackData = [
-    { img: javascript, text: 'Javascript' },
-    { img: typescript, text: 'Typescript' },
-    { img: react, text: 'React' },
-    { img: node, text: 'Node' },
-    { img: graphql, text: 'GraphQL' },
-    { img: apollo, text: 'Apollo' },
-    { img: redis, text: 'Redis' },
-    { img: postgres, text: 'Postgres' },
-    { img: mongo, text: 'Mongo' },
-    { img: figma, text: 'Figma' },
+    { img: 'images/apollo.png', text: 'Apollo' },
+    { img: 'images/figma.png', text: 'Figma' },
+    { img: 'images/graphql.png', text: 'GraphQL' },
+    { img: 'images/javascript.png', text: 'Javascript' },
+    { img: 'images/mongo.png', text: 'Mongo' },
+    { img: 'images/node.png', text: 'Node' },
+    { img: 'images/postgres.png', text: 'Postgres' },
+    { img: 'images/react.png', text: 'React' },
+    { img: 'images/redis.png', text: 'Redis' },
+    { img: 'images/typescript.png', text: 'Typescript' },
   ];
+  // const techStackData = [
+  //   { img: javascript, text: 'Javascript' },
+  //   { img: typescript, text: 'Typescript' },
+  //   { img: react, text: 'React' },
+  //   { img: node, text: 'Node' },
+  //   { img: graphql, text: 'GraphQL' },
+  //   { img: apollo, text: 'Apollo' },
+  //   { img: redis, text: 'Redis' },
+  //   { img: postgres, text: 'Postgres' },
+  //   { img: mongo, text: 'Mongo' },
+  //   { img: figma, text: 'Figma' },
+  // ];
 
   const ScrollElement = Scroll.Element;
   return (
@@ -66,7 +67,12 @@ const Summary = (props: Props) => {
             </Heading>
           </ScrollElement>
           <Flex align='center' justify='center' mt='8'>
-            <Image src={headshot} maxW='450px' w='50%' rounded='md' />
+            <Image
+              src='images/headshot.jpg'
+              maxW='450px'
+              w='50%'
+              rounded='md'
+            />
             <Box maxW='50%' px='8' fontSize='17px'>
               <Text as='p' mb='4'>
                 I began as a self-taught graphic designer, creating visuals

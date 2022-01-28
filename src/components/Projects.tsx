@@ -2,8 +2,7 @@ import { ArrowForwardIcon } from '@chakra-ui/icons';
 import {
   Box,
   Button,
-  Container,
-  Flex,
+  Container, Flex,
   Heading,
   Image,
   Link,
@@ -17,8 +16,6 @@ import {
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
 import ReactPlayer from 'react-player';
-import creationCrate from '../images/creation-crate.png';
-import hannyaProject from '../images/hannya-project.png';
 
 type Props = {};
 
@@ -90,8 +87,9 @@ const Projects = (props: Props) => {
                     See Live
                   </Button>
                 </Flex>
+
                 <Box w='960px' h='540px'>
-                  <Image src={creationCrate} />
+                  <Image src='images/creation-crate.png' />
                 </Box>
               </TabPanel>
               <TabPanel>
@@ -132,8 +130,9 @@ const Projects = (props: Props) => {
                     See Live
                   </Button>
                 </Flex>
+
                 <Box w='960px' h='540px'>
-                  <Image src={hannyaProject} />
+                  <Image src='images/hannya-project.png' />
                 </Box>
               </TabPanel>
               <TabPanel>
@@ -144,6 +143,7 @@ const Projects = (props: Props) => {
                   look, while telling people what we do.
                 </Text>
                 <Text my='4'>Built with Javascript/React</Text>
+
                 <Box pointerEvents='none' w='960px' h='540px'>
                   <ReactPlayer
                     url='https://www.youtube.com/watch?v=HwO5hh0Eygo'
@@ -161,6 +161,7 @@ const Projects = (props: Props) => {
                   analytics and charts for the merchant's payments.
                 </Text>
                 <Text my='4'>Built with Typescript/React, PHP, and MySQL.</Text>
+
                 <Box pointerEvents='none' w='960px' h='540px'>
                   <ReactPlayer
                     url='https://www.youtube.com/watch?v=AmSI7wH-EmI'
@@ -179,6 +180,7 @@ const Projects = (props: Props) => {
                   via scanning a QR code.
                 </Text>
                 <Text my='4'>Built with Typescript/React, PHP, and MySQL.</Text>
+
                 <Box pointerEvents='none' w='960px' h='540px'>
                   <ReactPlayer
                     url='https://www.youtube.com/watch?v=eqNmZav-h3c'
