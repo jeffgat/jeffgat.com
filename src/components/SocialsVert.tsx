@@ -5,11 +5,11 @@ import MotionBox from './MotionBox';
 
 type Props = {};
 
-const iconSize = 10;
+const iconSize = { base: 8, md: 10 };
 
 const SocialsVert = (props: Props) => {
   return (
-    <VStack position='absolute' left='6' top='6'>
+    <VStack position='absolute' left={{base: '4', md: '6'}} top='6'>
       <Link href='https://github.com/jeffgat' target='_blank'>
         <MotionBox
           transition={{ duration: 0.8, delay: 0.6 }}

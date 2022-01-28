@@ -66,14 +66,24 @@ const Summary = (props: Props) => {
               Summary
             </Heading>
           </ScrollElement>
-          <Flex align='center' justify='center' mt='8'>
+          <Flex
+            align='center'
+            justify='center'
+            mt='8'
+            direction={{ base: 'column', md: 'row' }}
+          >
             <Image
               src='images/headshot.jpg'
               maxW='450px'
-              w='50%'
+              w={{ base: '100%', md: '50%' }}
               rounded='md'
             />
-            <Box maxW='50%' px='8' fontSize='17px'>
+            <Box
+              maxW={{ base: '100%', md: '50%' }}
+              px={{ base: '0', md: '8' }}
+              mt={{ base: '4', md: '0' }}
+              fontSize='17px'
+            >
               <Text as='p' mb='4'>
                 I began as a self-taught graphic designer, creating visuals
                 across a wide spectrum. Working at an early stage startup taught
@@ -88,7 +98,7 @@ const Summary = (props: Props) => {
                 Preferred tech stack:
               </Text>
               <SimpleGrid
-                columns={5}
+                columns={{ base: 3, md: 5 }}
                 spacing={4}
                 align='center'
                 justify='center'

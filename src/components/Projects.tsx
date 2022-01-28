@@ -2,7 +2,8 @@ import { ArrowForwardIcon } from '@chakra-ui/icons';
 import {
   Box,
   Button,
-  Container, Flex,
+  Container,
+  Flex,
   Heading,
   Image,
   Link,
@@ -54,9 +55,13 @@ const Projects = (props: Props) => {
             <TabList>
               <Tab {...tabProps}>Creation Crate</Tab>
               <Tab {...tabProps}>NFT Minter</Tab>
-              <Tab {...tabProps}>Cevnn</Tab>
+              <Tab {...tabProps} display={{ base: 'none', md: 'block' }}>
+                Cevnn
+              </Tab>
               <Tab {...tabProps}>Cevnn Dashboard</Tab>
-              <Tab {...tabProps}>MADD Donation</Tab>
+              <Tab {...tabProps} display={{ base: 'none', md: 'block' }}>
+                MADD Donation
+              </Tab>
             </TabList>
 
             <TabPanels>
@@ -74,7 +79,8 @@ const Projects = (props: Props) => {
                   Built with Typescript/React, Next.js, Node, GraphQL, Redis,
                   Postgres, and Docker.
                 </Text>
-                <Flex mb='4'>
+
+                <Flex mb='8'>
                   <Button
                     as={Link}
                     href='https://www.creationcrate.com/'
@@ -88,24 +94,35 @@ const Projects = (props: Props) => {
                   </Button>
                 </Flex>
 
-                <Box w='960px' h='540px'>
+                <Text
+                  display={{ base: 'block', md: 'none' }}
+                  fontStyle='italic'
+                  fontSize='20px'
+                >
+                  (View on desktop)
+                </Text>
+                <Box
+                  w='960px'
+                  h='540px'
+                  display={{ base: 'none', md: 'block' }}
+                >
                   <Image src='images/creation-crate.png' />
                 </Box>
               </TabPanel>
               <TabPanel>
                 <Text>
                   This was a side project to explore some of the emerging
-                  technology around Web3. The website is a React front-end, with
+                  technology around web3. The website is a React front-end, with
                   a single smart contract as the back-end. It connects to your
                   Meta Mask wallet and when you click "Mint", it requests MATIC
                   (Polygon Mumbai Testnet) from your wallet and mints a new NFT
-                  from a collection I created.
+                  from a collection that I created.
                 </Text>
                 <Text my='4'>
                   Built with Typescript/React, Solidity, OpenZeppelin, Hardhat,
                   Ethers.js, Pinata, Alchemy, and the IPFS.
                 </Text>
-                <Flex mb='4'>
+                <Flex mb='8'>
                   <Button
                     as={Link}
                     href='https://github.com/jeffgat/web3-exploration/tree/main/web3-app'
@@ -119,7 +136,7 @@ const Projects = (props: Props) => {
                   </Button>
                   <Button
                     as={Link}
-                    href=''
+                    href='https://web3-exploration.vercel.app/'
                     target='_blank'
                     color='white'
                     bg='blue.400'
@@ -131,7 +148,18 @@ const Projects = (props: Props) => {
                   </Button>
                 </Flex>
 
-                <Box w='960px' h='540px'>
+                <Text
+                  display={{ base: 'block', md: 'none' }}
+                  fontStyle='italic'
+                  fontSize='20px'
+                >
+                  (View on desktop)
+                </Text>
+                <Box
+                  w='960px'
+                  h='540px'
+                  display={{ base: 'none', md: 'block' }}
+                >
                   <Image src='images/hannya-project.png' />
                 </Box>
               </TabPanel>
@@ -142,9 +170,11 @@ const Projects = (props: Props) => {
                   and create a static website that gave us that modern fintech
                   look, while telling people what we do.
                 </Text>
-                <Text my='4'>Built with Javascript/React</Text>
+                <Text mt='4' mb='8'>
+                  Built with Javascript/React.
+                </Text>
 
-                <Box pointerEvents='none' w='960px' h='540px'>
+                <Box pointerEvents='none' w='960px' h='540px' mt='4'>
                   <ReactPlayer
                     url='https://www.youtube.com/watch?v=HwO5hh0Eygo'
                     playing
@@ -160,9 +190,23 @@ const Projects = (props: Props) => {
                   This project was a client facing dashboard, showing various
                   analytics and charts for the merchant's payments.
                 </Text>
-                <Text my='4'>Built with Typescript/React, PHP, and MySQL.</Text>
+                <Text mt='4' mb='8'>
+                  Built with Typescript/React, PHP, and MySQL.
+                </Text>
 
-                <Box pointerEvents='none' w='960px' h='540px'>
+                <Text
+                  display={{ base: 'block', md: 'none' }}
+                  fontStyle='italic'
+                  fontSize='20px'
+                >
+                  (View on desktop)
+                </Text>
+                <Box
+                  pointerEvents='none'
+                  w='960px'
+                  h='540px'
+                  display={{ base: 'none', md: 'block' }}
+                >
                   <ReactPlayer
                     url='https://www.youtube.com/watch?v=AmSI7wH-EmI'
                     playing
@@ -179,7 +223,9 @@ const Projects = (props: Props) => {
                   (Mothers Against Drunk Driving) Canada to process donations
                   via scanning a QR code.
                 </Text>
-                <Text my='4'>Built with Typescript/React, PHP, and MySQL.</Text>
+                <Text mt='4' mb='8'>
+                  Built with Typescript/React, PHP, and MySQL.
+                </Text>
 
                 <Box pointerEvents='none' w='960px' h='540px'>
                   <ReactPlayer

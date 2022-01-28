@@ -16,47 +16,49 @@ const Intro = (props: Props) => {
   //   });
   // };
 
+  const fontSize = { base: '28px', md: '34px', lg: '48px', xl: '56px' };
+
   return (
     <Box as='section' position='relative'>
       <Container maxW='120ch' h='100vh'>
         <VStack
+          display={{ base: 'flex', md: 'none' }}
           align='start'
           position='relative'
           top='50%'
           transform='translateY(-50%)'
         >
-          <Flex align='center' justify='start' textAlign='left'>
-            <Heading fontSize='56px' fontWeight='700' mr='3'>
-              Hello, I'm
-            </Heading>
-            <MotionBox
-              transition={{ duration: 0.8, delay: 0.2 }}
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              as='h2'
-              color='orange.400'
-              fontSize='56px'
-              fontWeight='700'
-            >
-              Jeff Gatbonton.
-            </MotionBox>
-          </Flex>
+          <Heading fontSize={fontSize} fontWeight='700' mr='3'>
+            Hello, I'm
+          </Heading>
+          <MotionBox
+            transition={{ duration: 0.8, delay: 0.2 }}
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            as='h2'
+            color='orange.400'
+            fontSize={fontSize}
+            fontWeight='700'
+          >
+            Jeff Gatbonton.
+          </MotionBox>
+
+          <Heading fontSize={fontSize} fontWeight='700' mr='3'>
+            I'm a
+          </Heading>
+          <MotionBox
+            transition={{ duration: 0.8, delay: 0.6 }}
+            initial={{ opacity: 0, x: -8, y: -8 }}
+            animate={{ opacity: 1, x: 0, y: 0 }}
+            as='h2'
+            color='blue.400'
+            fontSize={fontSize}
+            fontWeight='700'
+          >
+            Fullstack Developer
+          </MotionBox>
           <Flex align='center' justify='start'>
-            <Heading fontSize='56px' fontWeight='700' mr='3'>
-              I'm a
-            </Heading>
-            <MotionBox
-              transition={{ duration: 0.8, delay: 0.6 }}
-              initial={{ opacity: 0, x: -8, y: -8 }}
-              animate={{ opacity: 1, x: 0, y: 0 }}
-              as='h2'
-              color='blue.400'
-              fontSize='56px'
-              fontWeight='700'
-            >
-              Fullstack Developer
-            </MotionBox>
-            <Heading fontSize='56px' fontWeight='700' mx='3'>
+            <Heading fontSize={fontSize} fontWeight='700' mr='3'>
               and
             </Heading>
             <MotionBox
@@ -65,7 +67,61 @@ const Intro = (props: Props) => {
               animate={{ opacity: 1, x: 0, y: 0 }}
               as='h2'
               color='red.400'
-              fontSize='56px'
+              fontSize={fontSize}
+              fontWeight='700'
+            >
+              Designer.
+            </MotionBox>
+          </Flex>
+        </VStack>
+        <VStack
+          display={{ base: 'none', md: 'flex' }}
+          align='start'
+          position='relative'
+          top='50%'
+          transform='translateY(-50%)'
+        >
+          <Flex align='center' justify='start' textAlign='left'>
+            <Heading fontSize={fontSize} fontWeight='700' mr='3'>
+              Hello, I'm
+            </Heading>
+            <MotionBox
+              transition={{ duration: 0.8, delay: 0.2 }}
+              initial={{ opacity: 0, y: 8 }}
+              animate={{ opacity: 1, y: 0 }}
+              as='h2'
+              color='orange.400'
+              fontSize={fontSize}
+              fontWeight='700'
+            >
+              Jeff Gatbonton.
+            </MotionBox>
+          </Flex>
+          <Flex align='center' justify='start'>
+            <Heading fontSize={fontSize} fontWeight='700' mr='3'>
+              I'm a
+            </Heading>
+            <MotionBox
+              transition={{ duration: 0.8, delay: 0.6 }}
+              initial={{ opacity: 0, x: -8, y: -8 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              as='h2'
+              color='blue.400'
+              fontSize={fontSize}
+              fontWeight='700'
+            >
+              Fullstack Developer
+            </MotionBox>
+            <Heading fontSize={fontSize} fontWeight='700' mx='3'>
+              and
+            </Heading>
+            <MotionBox
+              transition={{ duration: 0.8, delay: 0.6 }}
+              initial={{ opacity: 0, x: 8, y: 8 }}
+              animate={{ opacity: 1, x: 0, y: 0 }}
+              as='h2'
+              color='red.400'
+              fontSize={fontSize}
               fontWeight='700'
             >
               Designer.
