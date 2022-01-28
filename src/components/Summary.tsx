@@ -34,7 +34,7 @@ const IconBlock = ({ img, text }: any) => {
   );
 };
 
-const About = (props: Props) => {
+const Summary = (props: Props) => {
   const techStackData = [
     { img: javascript, text: 'Javascript' },
     { img: typescript, text: 'Typescript' },
@@ -60,6 +60,7 @@ const About = (props: Props) => {
               fontWeight='700'
               textTransform='uppercase'
               textAlign='center'
+              color='gray.600'
             >
               Summary
             </Heading>
@@ -107,4 +108,4 @@ const About = (props: Props) => {
   );
 };
 
-export default About;
+export default Summary;
