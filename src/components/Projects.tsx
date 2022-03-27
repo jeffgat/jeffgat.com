@@ -54,6 +54,7 @@ const Projects = (props: Props) => {
           <Tabs>
             <TabList>
               <Tab {...tabProps}>Creation Crate</Tab>
+              <Tab {...tabProps}>Bitcoin Wallet</Tab>
               <Tab {...tabProps}>NFT Minter</Tab>
               <Tab {...tabProps} display={{ base: 'none', md: 'block' }}>
                 Cevnn
@@ -107,6 +108,64 @@ const Projects = (props: Props) => {
                   display={{ base: 'none', md: 'block' }}
                 >
                   <Image src='images/creation-crate.png' />
+                </Box>
+              </TabPanel>
+              <TabPanel>
+                <Text>
+                  This was a side project to understand the basics of crypto
+                  wallets. You can sign up with your email, connect your bank
+                  account via Plaid: Select Chase bank, username: "user_good",
+                  pass: "pass_good" (Test Credentials). And then you can
+                  purchase test bitcoin via a bitcoin regtest node running in a
+                  docker container.
+                </Text>
+                <Text my='4'>
+                  Built with Javascript/React, Node, GraphQL, Redis, Postgres,
+                  and Docker.
+                </Text>
+
+                <Flex mb='8'>
+                  <Button
+                    as={Link}
+                    href='https://github.com/jeffgat/quantum-wallet'
+                    target='_blank'
+                    color='white'
+                    bg='red.400'
+                    rightIcon={<FaGithub />}
+                    _hover={{ bg: 'red.500', textDecoration: 'none' }}
+                  >
+                    Source Code
+                  </Button>
+                  <Button
+                    as={Link}
+                    href='https://exodus-client.vercel.app/'
+                    target='_blank'
+                    color='white'
+                    bg='blue.400'
+                    rightIcon={<ArrowForwardIcon />}
+                    ml='4'
+                    _hover={{ bg: 'blue.500', textDecoration: 'none' }}
+                  >
+                    See Live
+                  </Button>
+                </Flex>
+
+                <Text
+                  display={{ base: 'block', md: 'none' }}
+                  fontStyle='italic'
+                  fontSize='20px'
+                >
+                  (View on desktop)
+                </Text>
+                <Box pointerEvents='none' w='960px' h='540px' mt='4'>
+                  <ReactPlayer
+                    url='https://www.youtube.com/watch?v=-ubuIRqmbsI'
+                    playing
+                    loop
+                    muted
+                    width='100%'
+                    height='100%'
+                  />
                 </Box>
               </TabPanel>
               <TabPanel>
