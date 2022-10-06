@@ -16,7 +16,7 @@ const Intro = (props: Props) => {
   //   });
   // };
 
-  const fontSize = { base: '28px', md: '34px', lg: '48px', xl: '56px' };
+  const fontSize = { base: '28px', md: '30px', lg: '42px', xl: '52px' };
 
   return (
     <Box as='section' position='relative'>
@@ -70,7 +70,7 @@ const Intro = (props: Props) => {
               fontSize={fontSize}
               fontWeight='700'
             >
-              Designer.
+              Ex-Designer.
             </MotionBox>
           </Flex>
         </VStack>
@@ -124,7 +124,7 @@ const Intro = (props: Props) => {
               fontSize={fontSize}
               fontWeight='700'
             >
-              Designer.
+              Ex-Designer.
             </MotionBox>
           </Flex>
         </VStack>
