@@ -37,6 +37,9 @@ const tabHeadingProps = {
 };
 
 const Projects = (props: Props) => {
+    let x = 5;
+    console.log(x);
+
     return (
         <>
             <Box as="section" h="900px" mt="200px">
@@ -105,7 +108,13 @@ const Projects = (props: Props) => {
                                 >
                                     (View preview on desktop)
                                 </Text>
-                                <Box pointerEvents="none" w="960px" h="540px" mt="4" display={{ base: 'none', md: 'block' }}>
+                                <Box
+                                    pointerEvents="none"
+                                    w="960px"
+                                    h="540px"
+                                    mt="4"
+                                    display={{ base: 'none', md: 'block' }}
+                                >
                                     <ReactPlayer
                                         url="https://www.youtube.com/watch?v=8Co_-tK-qHg"
                                         playing
@@ -153,7 +162,7 @@ const Projects = (props: Props) => {
                                         See Live
                                     </Button>
                                 </Flex>
-                                
+
                                 <Box pointerEvents="none" w="960px" h="540px">
                                     <ReactPlayer
                                         url="https://www.youtube.com/watch?v=LPUmOS2nTCM"
@@ -261,7 +270,6 @@ const Projects = (props: Props) => {
                                             textDecoration: 'none',
                                         }}
                                     >
-                                        See Live
                                     </Button>
                                 </Flex>
 
@@ -272,7 +280,13 @@ const Projects = (props: Props) => {
                                 >
                                     (View on desktop)
                                 </Text>
-                                <Box pointerEvents="none" w="960px" h="540px" mt="4" display={{ base: 'none', md: 'block' }}>
+                                <Box
+                                    pointerEvents="none"
+                                    w="960px"
+                                    h="540px"
+                                    mt="4"
+                                    display={{ base: 'none', md: 'block' }}
+                                >
                                     <ReactPlayer
                                         url="https://www.youtube.com/watch?v=-ubuIRqmbsI"
                                         playing
