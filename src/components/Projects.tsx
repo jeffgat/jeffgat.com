@@ -50,8 +50,7 @@ const Projects = (props: Props) => {
                         fontWeight="700"
                         textTransform="uppercase"
                         mb="12"
-                        color="gray.600"
-                    >
+                        color="gray.600">
                         Recent Projects
                     </Heading>
                     <Tabs>
@@ -96,16 +95,14 @@ const Projects = (props: Props) => {
                                         _hover={{
                                             bg: 'blue.500',
                                             textDecoration: 'none',
-                                        }}
-                                    >
+                                        }}>
                                         See Live
                                     </Button>
                                 </Flex>
                                 <Text
                                     display={{ base: 'block', md: 'none' }}
                                     fontStyle="italic"
-                                    fontSize="20px"
-                                >
+                                    fontSize="20px">
                                     (View preview on desktop)
                                 </Text>
                                 <Box
@@ -113,8 +110,7 @@ const Projects = (props: Props) => {
                                     w="960px"
                                     h="540px"
                                     mt="4"
-                                    display={{ base: 'none', md: 'block' }}
-                                >
+                                    display={{ base: 'none', md: 'block' }}>
                                     <ReactPlayer
                                         url="https://www.youtube.com/watch?v=8Co_-tK-qHg"
                                         playing
@@ -157,8 +153,7 @@ const Projects = (props: Props) => {
                                         _hover={{
                                             bg: 'blue.500',
                                             textDecoration: 'none',
-                                        }}
-                                    >
+                                        }}>
                                         See Live
                                     </Button>
                                 </Flex>
@@ -176,8 +171,7 @@ const Projects = (props: Props) => {
                                 <Text
                                     display={{ base: 'block', md: 'none' }}
                                     fontStyle="italic"
-                                    fontSize="20px"
-                                >
+                                    fontSize="20px">
                                     (View preview on desktop)
                                 </Text>
                             </TabPanel>
@@ -208,8 +202,7 @@ const Projects = (props: Props) => {
                                         _hover={{
                                             bg: 'blue.500',
                                             textDecoration: 'none',
-                                        }}
-                                    >
+                                        }}>
                                         See Live
                                     </Button>
                                 </Flex>
@@ -217,15 +210,13 @@ const Projects = (props: Props) => {
                                 <Text
                                     display={{ base: 'block', md: 'none' }}
                                     fontStyle="italic"
-                                    fontSize="20px"
-                                >
+                                    fontSize="20px">
                                     (View preview on desktop)
                                 </Text>
                                 <Box
                                     w="960px"
                                     h="540px"
-                                    display={{ base: 'none', md: 'block' }}
-                                >
+                                    display={{ base: 'none', md: 'block' }}>
                                     <Image src="images/creation-crate.png" />
                                 </Box>
                             </TabPanel>
@@ -233,12 +224,8 @@ const Projects = (props: Props) => {
                             <TabPanel>
                                 <Text>
                                     This was a side project to understand the basics of
-                                    crypto wallets. You can sign up with your email,
-                                    connect your bank account via Plaid: Select Chase
-                                    bank, username: "user_good", pass: "pass_good" (Test
-                                    Credentials). And then you can purchase test bitcoin
-                                    via a bitcoin regtest node running in a docker
-                                    container.
+                                    crypto wallets. It was built using bitcoin-core on a
+                                    single regtest node.
                                 </Text>
                                 <Text my="4">
                                     Built with Javascript/React, Node, GraphQL, Redis,
@@ -253,31 +240,18 @@ const Projects = (props: Props) => {
                                         color="white"
                                         bg="red.400"
                                         rightIcon={<FaGithub />}
-                                        _hover={{ bg: 'red.500', textDecoration: 'none' }}
-                                    >
-                                        Source Code
-                                    </Button>
-                                    <Button
-                                        as={Link}
-                                        href="https://exodus-client.vercel.app/"
-                                        target="_blank"
-                                        color="white"
-                                        bg="blue.400"
-                                        rightIcon={<ArrowForwardIcon />}
-                                        ml="4"
                                         _hover={{
-                                            bg: 'blue.500',
+                                            bg: 'red.500',
                                             textDecoration: 'none',
-                                        }}
-                                    >
+                                        }}>
+                                        Source Code
                                     </Button>
                                 </Flex>
 
                                 <Text
                                     display={{ base: 'block', md: 'none' }}
                                     fontStyle="italic"
-                                    fontSize="20px"
-                                >
+                                    fontSize="20px">
                                     (View on desktop)
                                 </Text>
                                 <Box
@@ -285,8 +259,7 @@ const Projects = (props: Props) => {
                                     w="960px"
                                     h="540px"
                                     mt="4"
-                                    display={{ base: 'none', md: 'block' }}
-                                >
+                                    display={{ base: 'none', md: 'block' }}>
                                     <ReactPlayer
                                         url="https://www.youtube.com/watch?v=-ubuIRqmbsI"
                                         playing
@@ -336,16 +309,14 @@ const Projects = (props: Props) => {
                                 <Text
                                     display={{ base: 'block', md: 'none' }}
                                     fontStyle="italic"
-                                    fontSize="20px"
-                                >
+                                    fontSize="20px">
                                     (View on desktop)
                                 </Text>
                                 <Box
                                     pointerEvents="none"
                                     w="960px"
                                     h="540px"
-                                    display={{ base: 'none', md: 'block' }}
-                                >
+                                    display={{ base: 'none', md: 'block' }}>
                                     <ReactPlayer
                                         url="https://www.youtube.com/watch?v=AmSI7wH-EmI"
                                         playing
