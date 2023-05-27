@@ -191,21 +191,6 @@ const Projects = (props: Props) => {
                                     Redis, Postgres, and Docker.
                                 </Text>
 
-                                <Flex mb="8">
-                                    <Button
-                                        as={Link}
-                                        href="https://www.creationcrate.com/"
-                                        target="_blank"
-                                        color="white"
-                                        bg="blue.400"
-                                        rightIcon={<ArrowForwardIcon />}
-                                        _hover={{
-                                            bg: 'blue.500',
-                                            textDecoration: 'none',
-                                        }}>
-                                        See Live
-                                    </Button>
-                                </Flex>
 
                                 <Text
                                     display={{ base: 'block', md: 'none' }}
