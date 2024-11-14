@@ -1,12 +1,12 @@
-import { ArrowForwardIcon } from '@chakra-ui/icons';
 import {
     Box,
-    Button,
     Container,
     Flex,
     Heading,
     Image,
-    Link,
+    List,
+    ListItem,
+    ListIcon,
     Tab,
     TabList,
     TabPanel,
@@ -14,9 +14,8 @@ import {
     Tabs,
     Text,
 } from '@chakra-ui/react';
-import React from 'react';
-import { FaGithub } from 'react-icons/fa';
 import ReactPlayer from 'react-player';
+import { LuCheckCircle } from 'react-icons/lu';
 
 type Props = {};
 
@@ -55,19 +54,104 @@ const Projects = (props: Props) => {
                     </Heading>
                     <Tabs>
                         <TabList>
+                            <Tab {...tabProps}>GameOn Live</Tab>
                             <Tab {...tabProps}>Human Park</Tab>
-                            <Tab {...tabProps} display={{ base: 'none', md: 'block' }}>
-                                Virtually Human Studios
-                            </Tab>
+                            <Tab {...tabProps}>Virtually Human Studios</Tab>
                             <Tab {...tabProps}>Creation Crate</Tab>
-                            <Tab {...tabProps}>Bitcoin Wallet</Tab>
+                            {/* <Tab {...tabProps}>Bitcoin Wallet</Tab> */}
                             <Tab {...tabProps} display={{ base: 'none', md: 'block' }}>
                                 Cevnn
                             </Tab>
-                            <Tab {...tabProps}>Cevnn Dashboard</Tab>
+                            <Tab {...tabProps} display={{ base: 'none', md: 'block' }}>
+                                Cevnn Dashboard
+                            </Tab>
                         </TabList>
 
                         <TabPanels>
+                            {/* GameOn Live */}
+                            <TabPanel>
+                                <Text>
+                                    GameOn Live was a sports fantasy React Native mobile
+                                    application partnered with the LaLiga soccer league.
+                                    Users could select 4 players for an upcoming match,
+                                    and receive points in real time based on the player's
+                                    actions during the game. Features included:
+                                    <List fontSize="15px" marginTop={2}>
+                                        <ListItem>
+                                            <ListIcon
+                                                as={LuCheckCircle}
+                                                color="green.500"
+                                            />
+                                            Real time events/scoring
+                                        </ListItem>
+                                        <ListItem>
+                                            <ListIcon
+                                                as={LuCheckCircle}
+                                                color="green.500"
+                                            />
+                                            Live chat
+                                        </ListItem>
+                                        <ListItem>
+                                            <ListIcon
+                                                as={LuCheckCircle}
+                                                color="green.500"
+                                            />
+                                            Leaderboards
+                                        </ListItem>
+                                        <ListItem>
+                                            <ListIcon
+                                                as={LuCheckCircle}
+                                                color="green.500"
+                                            />
+                                            Push notifications
+                                        </ListItem>
+                                        <ListItem>
+                                            <ListIcon
+                                                as={LuCheckCircle}
+                                                color="green.500"
+                                            />
+                                            In-app purchases
+                                        </ListItem>
+                                        <ListItem>
+                                            <ListIcon
+                                                as={LuCheckCircle}
+                                                color="green.500"
+                                            />
+                                            App inbox notificiations
+                                        </ListItem>
+                                    </List>
+                                </Text>
+                                <Text my="4">
+                                    {' '}
+                                    Built using Typescript, React Native and Expo
+                                </Text>
+                                <Flex mb="8">
+                                    {/* <Button
+                                        as={Link}
+                                        href="https://humanpark.io/"
+                                        target="_blank"
+                                        color="white"
+                                        bg="blue.400"
+                                        rightIcon={<ArrowForwardIcon />}
+                                        _hover={{
+                                            bg: 'blue.500',
+                                            textDecoration: 'none',
+                                        }}>
+                                        See Live
+                                    </Button> */}
+                                </Flex>
+                                <Box w={{ base: '100%', md: '960px' }} h="540px" mt="4">
+                                    <ReactPlayer
+                                        url="https://www.youtube.com/watch?v=knidWtHm66s"
+                                        playing
+                                        loop
+                                        muted
+                                        width="100%"
+                                        height="100%"
+                                        controls
+                                    />
+                                </Box>
+                            </TabPanel>
                             {/* Human Park */}
                             <TabPanel>
                                 <Text>
@@ -81,11 +165,11 @@ const Projects = (props: Props) => {
                                 </Text>
                                 <Text my="4">
                                     {' '}
-                                    Built with Typescript/React, Next.js, Prisma, MySQL,
+                                    Built using Typescript/React, Next.js, Prisma, MySQL,
                                     Solidity, Hardhat and Ethers.js
                                 </Text>
                                 <Flex mb="8">
-                                    <Button
+                                    {/* <Button
                                         as={Link}
                                         href="https://humanpark.io/"
                                         target="_blank"
@@ -97,20 +181,10 @@ const Projects = (props: Props) => {
                                             textDecoration: 'none',
                                         }}>
                                         See Live
-                                    </Button>
+                                    </Button> */}
                                 </Flex>
-                                <Text
-                                    display={{ base: 'block', md: 'none' }}
-                                    fontStyle="italic"
-                                    fontSize="20px">
-                                    (View preview on desktop)
-                                </Text>
-                                <Box
-                                    pointerEvents="none"
-                                    w="960px"
-                                    h="540px"
-                                    mt="4"
-                                    display={{ base: 'none', md: 'block' }}>
+
+                                <Box w={{ base: '100%', md: '960px' }} h="540px" mt="4">
                                     <ReactPlayer
                                         url="https://www.youtube.com/watch?v=8Co_-tK-qHg"
                                         playing
@@ -118,6 +192,7 @@ const Projects = (props: Props) => {
                                         muted
                                         width="100%"
                                         height="100%"
+                                        controls
                                     />
                                 </Box>
                             </TabPanel>
@@ -138,12 +213,12 @@ const Projects = (props: Props) => {
                                 <Text mt="4">
                                     <Text my="4">
                                         {' '}
-                                        Built with Typescript/React, Next.js, Prisma,
+                                        Built using Typescript/React, Next.js, Prisma,
                                         MySQL, Solidity, Hardhat and Ethers.js
                                     </Text>
                                 </Text>
                                 <Flex mb="8">
-                                    <Button
+                                    {/* <Button
                                         as={Link}
                                         href="https://www.vhslab.com/"
                                         target="_blank"
@@ -155,10 +230,10 @@ const Projects = (props: Props) => {
                                             textDecoration: 'none',
                                         }}>
                                         See Live
-                                    </Button>
+                                    </Button> */}
                                 </Flex>
 
-                                <Box pointerEvents="none" w="960px" h="540px">
+                                <Box w={{ base: '100%', md: '960px' }} h="540px">
                                     <ReactPlayer
                                         url="https://www.youtube.com/watch?v=LPUmOS2nTCM"
                                         playing
@@ -166,14 +241,9 @@ const Projects = (props: Props) => {
                                         muted
                                         width="100%"
                                         height="100%"
+                                        controls
                                     />
                                 </Box>
-                                <Text
-                                    display={{ base: 'block', md: 'none' }}
-                                    fontStyle="italic"
-                                    fontSize="20px">
-                                    (View preview on desktop)
-                                </Text>
                             </TabPanel>
                             {/* Creation Crate */}
                             <TabPanel>
@@ -187,26 +257,16 @@ const Projects = (props: Props) => {
                                     developed this as the sole developer at the company.
                                 </Text>
                                 <Text my="4">
-                                    Built with Typescript/React, Next.js, Node, GraphQL,
+                                    Built using Typescript/React, Next.js, Node, GraphQL,
                                     Redis, Postgres, and Docker.
                                 </Text>
 
-
-                                <Text
-                                    display={{ base: 'block', md: 'none' }}
-                                    fontStyle="italic"
-                                    fontSize="20px">
-                                    (View preview on desktop)
-                                </Text>
-                                <Box
-                                    w="960px"
-                                    h="540px"
-                                    display={{ base: 'none', md: 'block' }}>
+                                <Box w={{ base: '100%', md: '960px' }} h="540px">
                                     <Image src="images/creation-crate.png" />
                                 </Box>
                             </TabPanel>
                             {/* Bitcoin Wallet */}
-                            <TabPanel>
+                            {/* <TabPanel>
                                 <Text>
                                     This was a side project to understand the basics of
                                     crypto wallets. It was built using bitcoin-core on a
@@ -240,7 +300,6 @@ const Projects = (props: Props) => {
                                     (View on desktop)
                                 </Text>
                                 <Box
-                                    pointerEvents="none"
                                     w="960px"
                                     h="540px"
                                     mt="4"
@@ -252,9 +311,10 @@ const Projects = (props: Props) => {
                                         muted
                                         width="100%"
                                         height="100%"
+                                        controls
                                     />
                                 </Box>
-                            </TabPanel>
+                            </TabPanel> */}
 
                             {/* Cevnn */}
                             <TabPanel>
@@ -266,10 +326,10 @@ const Projects = (props: Props) => {
                                     do.
                                 </Text>
                                 <Text mt="4" mb="8">
-                                    Built with Javascript/React.
+                                    Built using Javascript/React.
                                 </Text>
 
-                                <Box pointerEvents="none" w="960px" h="540px" mt="4">
+                                <Box w="960px" h="540px" mt="4">
                                     <ReactPlayer
                                         url="https://www.youtube.com/watch?v=HwO5hh0Eygo"
                                         playing
@@ -277,6 +337,7 @@ const Projects = (props: Props) => {
                                         muted
                                         width="100%"
                                         height="100%"
+                                        controls
                                     />
                                 </Box>
                             </TabPanel>
@@ -288,7 +349,7 @@ const Projects = (props: Props) => {
                                     payments.
                                 </Text>
                                 <Text mt="4" mb="8">
-                                    Built with Typescript/React, PHP, and MySQL.
+                                    Built using Typescript/React, PHP, and MySQL.
                                 </Text>
 
                                 <Text
@@ -298,7 +359,6 @@ const Projects = (props: Props) => {
                                     (View on desktop)
                                 </Text>
                                 <Box
-                                    pointerEvents="none"
                                     w="960px"
                                     h="540px"
                                     display={{ base: 'none', md: 'block' }}>
@@ -307,6 +367,7 @@ const Projects = (props: Props) => {
                                         playing
                                         loop
                                         muted
+                                        controls
                                         width="100%"
                                         height="100%"
                                     />
