@@ -7,8 +7,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@chakra-ui/icons": "^1.1.1",
-    "@chakra-ui/react": "^1.8.0",
+    "@chakra-ui/descendant": "^3.1.0",
+    "@chakra-ui/icons": "^2.2.4",
+    "@chakra-ui/react": "^3.1.1",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
     "@fontsource/montserrat": "^4.5.2",
@@ -17,15 +18,15 @@
     "framer-motion": "^5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-icons": "^5.3.0",
+    "react-icons": "^4.3.1",
     "react-player": "^2.9.0",
     "react-scroll": "^1.8.4"
   },
   "devDependencies": {
-    "@types/react": "^17.0.33",
-    "@types/react-dom": "^17.0.10",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^1.0.7",
-    "typescript": "^4.4.4",
+    "typescript": "^5.6.3",
     "vite": "^2.7.2"
   }
 }

@@ -15,7 +15,7 @@ import {
     Text,
 } from '@chakra-ui/react';
 import ReactPlayer from 'react-player';
-import { LuCheckCircle } from 'react-icons/lu';
+import { MdCheckCircle } from 'react-icons/md';
 
 type Props = {};
 
@@ -79,42 +79,42 @@ const Projects = (props: Props) => {
                                     <List fontSize="15px" marginTop={2}>
                                         <ListItem>
                                             <ListIcon
-                                                as={LuCheckCircle}
+                                                as={MdCheckCircle}
                                                 color="green.500"
                                             />
                                             Real time events/scoring
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon
-                                                as={LuCheckCircle}
+                                                as={MdCheckCircle}
                                                 color="green.500"
                                             />
                                             Live chat
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon
-                                                as={LuCheckCircle}
+                                                as={MdCheckCircle}
                                                 color="green.500"
                                             />
                                             Leaderboards
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon
-                                                as={LuCheckCircle}
+                                                as={MdCheckCircle}
                                                 color="green.500"
                                             />
                                             Push notifications
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon
-                                                as={LuCheckCircle}
+                                                as={MdCheckCircle}
                                                 color="green.500"
                                             />
                                             In-app purchases
                                         </ListItem>
                                         <ListItem>
                                             <ListIcon
-                                                as={LuCheckCircle}
+                                                as={MdCheckCircle}
                                                 color="green.500"
                                             />
                                             App inbox notificiations
